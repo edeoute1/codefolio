@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Codefolio</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Codefolio.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index" >Edeoute1 :(</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between navbarosama">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index1">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index2">Certifications</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <aside class="linkgit">
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<div class="badge-base LI-profile-badge p-4" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="sarang-masal-4377a9273" data-version="v1">
+    <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sarang-masal-4377a9273?trk=profile-badge"></a>
+    </div>
+
+<div class="profile-card ">
+    <div class="githeader">
+        <span class="logo">GitHub</span>
+    </div>
+    <div class="card-body">
+        <img src="https://github.com/edeoute1.png" class="avatar">
+        <h6 class="usered"> <b>edeoute1</b></h6>
+        <p class="college">Engineering Student</p>
+        <a href="https://github.com/edeoute1" target="_blank" class="profile-btn">View profile</a>
+    </div>
+</div>
+
+</aside>
+
+    <div class="hmabout"  style="font-family: var(--bs-body-font-family); font-size:16px;">
+       
+         @RenderSection("hmabout", required:false)
+    </div>
+
+   
+    
+    <iframe src="https://www.juicer.io/api/feeds/sarang-masal-4377a9273/iframe" frameborder="0" width="1000" height="1000" class="linkframe" ></iframe>
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+    
+    <footer class="border-top footer text-muted" style="background-color:#f8f9fa; ">
+         <div class="container" >
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sarang-masal-4377a9273/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://discord.com" target="_blank">
+            <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/edeoute1" target="_blank">
+            <i class="fab fa-github"></i>
+                </a>
+    
+        </div></div>
+         <div class="container" id="contact">
+            <div class="social-icons">
+                <a style="font-size:18px;" asp-page="/Index">
+                Home
+                </a>
+                <a style="font-size:18px;" asp-page="/Index1">
+                Projects
+                </a>
+                <a style="font-size:18px;"  asp-page="/Index2">
+                Certifications
+                </a>
+    
+        </div>
+        </div>
+        
+        <div class="container">
+            &copy; 2026 - Codefolio - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
