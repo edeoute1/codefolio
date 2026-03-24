@@ -1,4 +1,4 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
@@ -186,4 +186,95 @@ button.accept-policy {
         margin-left: 4rem;
         display:none;
     }
+}
+
+.progress-container {
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+    border:solid 2px grey ;
+}
+
+.stats {
+    width: 50%;
+    padding: 10px;
+    float:left;
+    margin-top:20px;
+    
+   
+}
+
+/* Base circle */
+.circular-progress {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    background: conic-gradient(#cecece 0deg, #ddd 0deg);
+}
+
+    /* Inner circle */
+    .circular-progress::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: white;
+        border-radius: 50%;
+    }
+
+/* Text */
+.value {
+    position: relative;
+    font-size: 16px;
+}
+
+/* Individual progress values */
+.circular-progress.html {
+    background: conic-gradient(#0077cc 288deg, #ddd 0deg); /* 80% */
+}
+
+.circular-progress.css {
+    background: conic-gradient(#0077cc 234deg, #ddd 0deg); /* 65% */
+}
+
+.circular-progress.js {
+    background: conic-gradient(#0077cc 180deg, #ddd 0deg); /* 50% */
+}
+
+.circular-progress.cpp {
+    background: conic-gradient(#0077cc 340deg, #ddd 0deg); /* 80% */
+}
+
+.circular-progress.java {
+    background: conic-gradient(#0077cc 320deg, #ddd 0deg); /* 65% */
+}
+
+.circular-progress.python {
+    background: conic-gradient(#0077cc 355deg, #ddd 0deg); /* 50% */
+}
+.circular-progress.R {
+    background: conic-gradient(#0077cc 270deg, #ddd 0deg); /* 80% */
+}
+
+.circular-progress.chash {
+    background: conic-gradient(#0077cc 180deg, #ddd 0deg); /* 65% */
+}
+
+.circular-progress.pandas {
+    background: conic-gradient(#0077cc 100deg, #ddd 0deg); /* 50% */
+}
+.circular-progress.sql {
+    background: conic-gradient(#0077cc 300deg, #ddd 0deg); /* 80% */
+}
+
+.circular-progress.react {
+    background: conic-gradient(#0077cc 90deg, #ddd 0deg); /* 65% */
+}
+
+.circular-progress.bootstrap {
+    background: conic-gradient(#0077cc 280deg, #ddd 0deg); /* 50% */
 }
